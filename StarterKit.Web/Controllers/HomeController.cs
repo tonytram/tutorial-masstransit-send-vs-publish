@@ -22,7 +22,9 @@ namespace StarterKit.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var model = new MyMessageViewModel();
+
+            return View(model);
         }
 
         [HttpPost]
